@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Name - Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="section">
+        <div class="header-image">
+            <img src="./my_img.jpeg" alt="Your Name" class="profile-image">
+        </div>
+        <h1>Akashdeep Gupta</h1>
+        <p>Software Engineer | Web Developer</p>
+    </section>
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate software engineer with expertise in web development and problem-solving. I love to create efficient and user-friendly applications.
+        </p>
+    </section>
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Grievance Portal</h3>
+            <p>Created a platform for citizens to post their complaints and connect with local authorities. Built using Next.js and FastAPI.</p>
+        </div>
+        <!-- Add more project divs here -->
+    </section>
+    <section id="contact" class="section">
+        <h2>Contact Me !</h2>
+        <form action="send_email.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
